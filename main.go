@@ -24,9 +24,7 @@ func setupRoutes(r *gin.Engine) {
 //Dummy function
 func kalyan(c *gin.Context) {
 
-	//date_str, ok := c.Params.Get("from_date")
 
-	//total_cases := getTotalCases(records, date)
 	var jewels, err1 = c.Params.Get("jewels")
 	var stones, err2 = c.Params.Get("stones")
 	count := getStones(jewels, stones)
